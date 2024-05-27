@@ -4,7 +4,6 @@
 describe ("This is 3rd Classes Assignemnt 'B' which contains button click, scrolling, form fillup", async()=>{
 
 
-
 it ("Should get the add button, click it, then get the delete button and click it", async()=>{
 
             await browser.url("https://the-internet.herokuapp.com/add_remove_elements/")
@@ -16,10 +15,8 @@ it ("Should get the add button, click it, then get the delete button and click i
 
             const dltButton = await $("button[onclick='deleteElement()']")
             await dltButton.click();
-            await browser.pause(10000)
+            await browser.pause(5000)
     })
-
-
 
 it ("Should go to the specific website, scroll down once and scroll up again", async()=>{
 
@@ -35,8 +32,6 @@ it ("Should go to the specific website, scroll down once and scroll up again", a
             await browser.pause(3000)
 
     })
-
-
 
 it ("Should go to the specific website, fill up a form and submit", async()=>{
 
@@ -62,8 +57,6 @@ it ("Should go to the specific website, fill up a form and submit", async()=>{
 
     })
 
-
-
 it ("Should go to the specific website, press different keys from keyboard in a textarea", async()=>{
 
             await browser.url("https://play1.automationcamp.ir/keyboard_events.html")
@@ -87,8 +80,6 @@ it ("Should go to the specific website, press different keys from keyboard in a 
             await browser.keys(['Enter']);
             await browser.pause(5000)
 
-
         })
-
 
 })
