@@ -28,9 +28,7 @@ describe ("This is 4th Classes Assignemnt which contains Window chnage and Alert
         })
 
 
-
-
-    it ("Should clicked on different type of alerts", async()=>{
+    it ("Should clicked on different type of alerts and will do different activities", async()=>{
 
                  await browser.url("https://demo.automationtesting.in/Alerts.html")
                  await browser.pause(3000); 
@@ -77,12 +75,6 @@ describe ("This is 4th Classes Assignemnt which contains Window chnage and Alert
                 
     
          })
-
-
-
-
-
-
 
 
     })
