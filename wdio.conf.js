@@ -21,7 +21,7 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/**/test.assignment 4.js' 
+        './test/specs/**/test.assignment 5.js' 
         //'./test/specs/**/test.assignment 3.B.js'
         //'./test/specs/**/test.e2e.js'
     ],

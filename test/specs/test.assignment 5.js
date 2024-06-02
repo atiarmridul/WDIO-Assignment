@@ -6,8 +6,8 @@ describe ("This is 5th Classes Assignemnt about Strings", async()=>{
     it ("Will show full name without any space", async()=>{
 
         const firstName = "  Mr. Atiar"; 
-        const middleName = " Rahman ";
-        const lastName = "Chowdhury  ";
+        const middleName = " Rahman";
+        const lastName = "Chowdhury";
         const trimmesFirstName = firstName.trim()
         const trimmesMiddleName = middleName.trim()
         const trimmesLastName = lastName.trim()
@@ -20,11 +20,6 @@ describe ("This is 5th Classes Assignemnt about Strings", async()=>{
     it ("Will show string manupulation", async()=>{
 
         const message = "I am in love with Typescript, but I also know javascript."
-        //const message = "I use JavaScript every day."
-        //const message = "TypeScript is awesome!"
-        //const message = "JAVASCRIPT is powerful, but I like TYPESCRIPT too."
-        //const message = ""
-
         const messageUpper = message.toUpperCase();
 
         const isTypeScriptPresent = messageUpper.includes("TYPESSCRIPT");
@@ -32,7 +27,7 @@ describe ("This is 5th Classes Assignemnt about Strings", async()=>{
    
         if (  isTypeScriptPresent  || isJavaScriptPresent ){
         
-            const finalText = messageUpper.replace("JAVASCRIPT", "!@#$");
+            const finalText = messageUpper.replaceAll("JAVASCRIPT", "!@#$");
             console.log("Final Text is:",finalText);
     
         } else {
@@ -49,8 +44,8 @@ describe ("This is 5th Classes Assignemnt about Strings", async()=>{
     it ("Will extract the OTP from the message", async()=>{
     
         const sms = "“Dear customer, use this One Time Password 86549 to log in to your account. This OTP will be valid for the next 5 mins.”"; 
-        const OTP = sms.match(/\b\d{5}\b/);
-        console.log("OTP is: ",OTP);   
+        const arraySms = sms.split(" "); 
+        console.log("OTP is:>>>>>>>>>>>>>>>>>>>>>>> ", arraySms[7]);   
 
     })
 
@@ -64,7 +59,6 @@ describe ("This is 5th Classes Assignemnt about Strings", async()=>{
         console.log("Specific message is  >>>",lastMessage);   
 
     })
-
 
 
 
